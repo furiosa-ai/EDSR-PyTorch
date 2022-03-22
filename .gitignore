@@ -64,3 +64,16 @@ target/
 *.txt
 *.swp
 .vscode
+*.jpg
+
+# tensorrt_example
+tensorrt_example/DIV2K
+tensorrt_example/DIV2K.tar
+tensorrt_example/BSDS300
+tensorrt_example/BSDS300-images.tgz
+tensorrt_example/onnx_model
+tensorrt_example/pytorch_model
+tensorrt_example/trt_cache
+tensorrt_example/trt_model
+
+
