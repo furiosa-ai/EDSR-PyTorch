@@ -143,6 +143,11 @@ parser.add_argument('--save_results', action='store_true',
 parser.add_argument('--save_gt', action='store_true',
                     help='save low-resolution and high-resolution images together')
 
+parser.add_argument('--input_shape', type=int, nargs='+', help='input shape for exporting onnx' )
+parser.add_argument('--dynamic_shape', action='store_true',
+                    help='enable dynamic shape while exporting onnx')
+
+
 args = parser.parse_args()
 template.set_template(args)
 

@@ -35,10 +35,11 @@ class Model(nn.Module):
         )
         print(self.model, file=ckp.log_file)
 
-    def forward(self, x, idx_scale):
-        self.idx_scale = idx_scale
-        if hasattr(self.model, 'set_scale'):
-            self.model.set_scale(idx_scale)
+    # def forward(self, x, idx_scale):
+    #     self.idx_scale = idx_scale
+    #     if hasattr(self.model, 'set_scale'):
+    #         self.model.set_scale(idx_scale)
+    def forward(self, x):
 
         if self.training:
             if self.n_GPUs > 1:
